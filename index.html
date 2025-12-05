@@ -20,6 +20,14 @@
         -webkit-text-fill-color: transparent;
       }
       
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .animate-blink {
+        animation: blink 1s step-end infinite;
+      }
+      
       /* PAR DÉFAUT (ÉCRAN) : Masquage visuel robuste du CV sans le retirer du DOM */
       #printable-cv {
         position: fixed;

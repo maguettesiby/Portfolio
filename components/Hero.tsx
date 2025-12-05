@@ -113,7 +113,7 @@ const Hero: React.FC = () => {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-amber-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
                 <img 
-                    src="https://s10.aconvert.com/convert/p3r68-cdx67/arwpg-1j19g.svg" 
+                    src="https://s10.aconvert.com/convert/p3r68-cdx67/a6ldk-91102.svg" 
                     alt="Maguette Siby" 
                     className="relative w-full h-full object-cover rounded-3xl shadow-2xl z-10 border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-500"
                     onError={(e) => {

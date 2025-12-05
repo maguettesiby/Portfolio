@@ -12,7 +12,7 @@ const CV: React.FC = () => {
           {/* Profile Photo Area */}
           <div className="w-40 h-40 mx-auto bg-slate-800 rounded-full overflow-hidden border-4 border-slate-700 shadow-lg mb-4">
              <img 
-                src="https://s10.aconvert.com/convert/p3r68-cdx67/arwpg-1j19g.svg" 
+                src="https://s10.aconvert.com/convert/p3r68-cdx67/a6ldk-91102.svg" 
                 alt="Maguette Siby" 
                 className="w-full h-full object-cover"
                 onError={(e) => {

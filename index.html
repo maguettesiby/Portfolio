@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth scroll-pt-24">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Développeur Web & Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Outfit', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .gradient-text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      /* PAR DÉFAUT (ÉCRAN) : Masquage visuel robuste du CV sans le retirer du DOM */
+      #printable-cv {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        z-index: -1;
+        opacity: 0;
+      }
+
+      /* STYLE D'IMPRESSION (PRINT) */
+      @media print {
+        @page {
+          margin: 0;
+          size: auto;
+        }
+        
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: white;
+        }
+
+        /* Cacher explicitement le contenu du site */
+        #site-content {
+          display: none !important;
+        }
+
+        /* Afficher et positionner le CV */
+        #printable-cv {
+          position: relative !important;
+          width: 100% !important;
+          height: auto !important;
+          overflow: visible !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          display: block !important;
+          z-index: 9999;
+          background-color: white;
+        }
+        
+        /* Force l'impression des couleurs de fond (Chrome/Safari/Edge) */
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
